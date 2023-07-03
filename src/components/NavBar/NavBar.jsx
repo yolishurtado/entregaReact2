@@ -1,6 +1,6 @@
-import CartWidget from "../CartWidget/CartWidget"
+import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css'
-import { NavLink, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
     const imgMarolio = "https://www.marolio.com.ar/sites/all/themes/theme1043/logo.png";
@@ -13,11 +13,11 @@ const NavBar = () => {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to={"/categoria/2"}> Lácteos </NavLink>
+                        <Link to={"/categoria/2"}> Lácteos </Link>
                     </li>
 
                     <li>
-                        <NavLink to={"/categoria/3"}> Almacén </NavLink>
+                        <Link to={"/categoria/3"}> Almacén </Link>
                     </li>
                 </ul>
             </nav>
@@ -27,3 +27,5 @@ const NavBar = () => {
         </header>
     )
 }
+
+export default NavBar;
